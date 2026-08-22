@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CNC Machining & Metal 3D Printing Quotes Australia | 24 Hour Quotes</title>
+    <meta
+      name="description"
+      content="Australia-wide CNC machining and metal 3D printing quote portal. Upload drawings for stainless steel, TC4 titanium, nickel alloys and precision parts, with quotes within 24 hours."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="RapidCut Advanced Manufacturing home">
+        <span class="brand-mark">RC</span>
+        <span>RapidCut AM</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#quote">Get a quote</a>
+        <a href="#services">Capabilities</a>
+        <a href="#payment">Payment</a>
+      </nav>
+      <a class="header-cta" href="#quote">Upload drawings</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img src="./assets/cnc-hero.png" alt="Modern CNC machining centre cutting a precision aluminium component" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Australia-wide CNC machining & metal 3D printing quotes</p>
+          <h1>Upload your drawings today. Get a manufacturing quote within 24 hours.</h1>
+          <p class="hero-copy">
+            Fast, competitively priced CNC machining and metal additive manufacturing for Australian engineers,
+            builders, manufacturers and repair teams.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#quote">Start quote request</a>
+            <a class="button secondary" href="mailto:quotes@example.com?subject=Manufacturing%20Quote%20Request">Email drawings</a>
+          </div>
+          <div class="trust-strip" aria-label="Key service benefits">
+            <span>24h quote target</span>
+            <span>CNC & metal AM</span>
+            <span>Credit-card payment</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-label="Service highlights">
+        <div>
+          <strong>Fast</strong>
+          <span>Rapid quoting and short lead times for urgent jobs.</span>
+        </div>
+        <div>
+          <strong>Sharp Pricing</strong>
+          <span>Competitive local rates for prototypes and repeat orders.</span>
+        </div>
+        <div>
+          <strong>Drawing Ready</strong>
+          <span>Upload STEP, DXF, DWG, PDF, STL and ZIP drawing packs.</span>
+        </div>
+        <div>
+          <strong>Metal 3D Printing</strong>
+          <span>Stainless steel, TC4 titanium, nickel alloys and high-performance metal parts.</span>
+        </div>
+        <div>
+          <strong>Australia Wide</strong>
+          <span>Support for customers across NSW, VIC, QLD, SA, WA, TAS, ACT and NT.</span>
+        </div>
+      </section>
+
+      <section class="quote-section" id="quote">
+        <div class="section-heading">
+          <p class="eyebrow">Online quote request</p>
+          <h2>Register with your email and upload your job files.</h2>
+          <p>
+            Submit your drawing pack, quantity and material requirements. We will review manufacturability and send
+            pricing within 24 hours.
+          </p>
+        </div>
+
+        <div class="quote-layout">
+          <form class="quote-form" id="quoteForm">
+            <div class="form-grid">
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="name@company.com.au" required />
+              </label>
+              <label>
+                Company or name
+                <input type="text" name="company" placeholder="Your company" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="+61 ..." />
+              </label>
+              <label>
+                Delivery postcode
+                <input type="text" name="postcode" placeholder="2000" inputmode="numeric" />
+              </label>
+              <label>
+                Process
+                <select name="process">
+                  <option>CNC milling</option>
+                  <option>CNC turning</option>
+                  <option>Metal 3D printing</option>
+                  <option>CNC machining + metal 3D printing</option>
+                  <option>Mill-turn</option>
+                  <option>Sheet metal / laser cutting</option>
+                  <option>Not sure - please advise</option>
+                </select>
+              </label>
+              <label>
+                Quantity
+                <input type="number" name="quantity" placeholder="10" min="1" />
+              </label>
+            </div>
+
+            <label>
+              Material and finish
+              <input type="text" name="material" placeholder="Stainless steel, TC4 titanium, Inconel / Ni alloy, 6061 aluminium..." />
+            </label>
+
+            <label>
+              Job notes
+              <textarea
+                name="notes"
+                rows="5"
+                placeholder="Tell us tolerances, critical features, delivery deadline or special requirements."
+              ></textarea>
+            </label>
+
+            <label class="upload-box" for="drawingUpload">
+              <input
+                id="drawingUpload"
+                type="file"
+                name="drawings"
+                multiple
+                accept=".step,.stp,.dxf,.dwg,.pdf,.stl,.iges,.igs,.zip"
+              />
+              <span class="upload-icon">+</span>
+              <strong>Upload drawing files</strong>
+              <small>STEP, STP, DXF, DWG, PDF, STL, 3MF, IGES or ZIP. Multiple files accepted.</small>
+              <em id="fileList">No files selected yet.</em>
+            </label>
+
+            <div class="form-actions">
+              <button class="button primary" type="submit">Create account & request quote</button>
+              <p>By submitting, you create an email-based quote account for this job.</p>
+            </div>
+          </form>
+
+          <aside class="quote-status" aria-live="polite">
+            <span class="status-pill">Quote status</span>
+            <h3 id="statusTitle">Ready for your drawings</h3>
+            <p id="statusCopy">
+              Once submitted, your request will show as received. The next step is a 24-hour manufacturing quote.
+            </p>
+            <ol>
+              <li><span>1</span> Register by email</li>
+              <li><span>2</span> Upload drawings</li>
+              <li><span>3</span> Receive quote within 24h</li>
+              <li><span>4</span> Pay by credit card</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Manufacturing capabilities</p>
+          <h2>CNC machining and metal 3D printing for complex production needs.</h2>
+        </div>
+        <div class="service-grid">
+          <article>
+            <h3>CNC Milling</h3>
+            <p>Precision aluminium, steel, stainless and plastic components from 3D CAD and 2D drawings.</p>
+          </article>
+          <article>
+            <h3>CNC Turning</h3>
+            <p>Shafts, bushings, spacers, threaded components and round parts with tight repeatability.</p>
+          </article>
+          <article>
+            <h3>Finishing</h3>
+            <p>Anodising, bead blasting, deburring, tapping, countersinking and inspection support.</p>
+          </article>
+          <article>
+            <h3>Low-Cost Runs</h3>
+            <p>Lean quoting for small batches, fixtures, brackets, repair pieces and production top-ups.</p>
+          </article>
+          <article>
+            <h3>Metal 3D Printing</h3>
+            <p>Complex metal parts, lightweight structures, prototypes and low-volume production from 3D models.</p>
+          </article>
+          <article>
+            <h3>Advanced Alloys</h3>
+            <p>Stainless steel, TC4 titanium, nickel alloys, aluminium and application-specific engineering metals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="materials" id="materials">
+        <div class="section-heading">
+          <p class="eyebrow">Materials</p>
+          <h2>Quote-ready metals for machining and additive manufacturing.</h2>
+        </div>
+        <div class="material-list">
+          <span>Stainless steel</span>
+          <span>TC4 titanium / Ti-6Al-4V</span>
+          <span>Nickel alloys / Inconel</span>
+          <span>Aluminium alloys</span>
+          <span>Tool steel</span>
+          <span>Copper alloys</span>
+        </div>
+      </section>
+
+      <section class="payment" id="payment">
+        <div>
+          <p class="eyebrow">Secure payment</p>
+          <h2>Approve the quote, then pay by credit card.</h2>
+          <p>
+            Add your live credit-card payment link here. Customers proceed after receiving their official quote number.
+          </p>
+        </div>
+        <a
+          class="button payment-button"
+          href="https://your-credit-card-payment-link.example"
+          target="_blank"
+          rel="noopener"
+        >
+          Pay by credit card
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>RapidCut AM</strong>
+      <span>CNC machining and metal 3D printing quotes for customers across Australia.</span>
+      <a href="mailto:quotes@example.com">quotes@example.com</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
