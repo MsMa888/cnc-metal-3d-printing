@@ -81,7 +81,17 @@
         </div>
 
         <div class="quote-layout">
-          <form class="quote-form" id="quoteForm">
+          <form
+            class="quote-form"
+            id="quoteForm"
+            action="https://formsubmit.co/cncmetal3dprinting@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <input type="hidden" name="_subject" value="New CNC / Metal 3D Printing Quote Request" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://cnc-metal-3d-printing.pages.dev/?submitted=true" />
+            <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" />
             <div class="form-grid">
               <label>
                 Email address
@@ -89,7 +99,7 @@
               </label>
               <label>
                 Company or name
-                <input type="text" name="company" placeholder="Your company" required />
+                <input type="text" name="company_or_name" placeholder="Your company" required />
               </label>
               <label>
                 Phone
@@ -97,7 +107,7 @@
               </label>
               <label>
                 Delivery postcode
-                <input type="text" name="postcode" placeholder="2000" inputmode="numeric" />
+                <input type="text" name="delivery_postcode" placeholder="2000" inputmode="numeric" />
               </label>
               <label>
                 Process
@@ -119,13 +129,13 @@
 
             <label>
               Material and finish
-              <input type="text" name="material" placeholder="Stainless steel, TC4 titanium, Inconel / Ni alloy, 6061 aluminium..." />
+              <input type="text" name="material_and_finish" placeholder="Stainless steel, TC4 titanium, Inconel / Ni alloy, 6061 aluminium..." />
             </label>
 
             <label>
               Job notes
               <textarea
-                name="notes"
+                name="job_notes"
                 rows="5"
                 placeholder="Tell us tolerances, critical features, delivery deadline or special requirements."
               ></textarea>
@@ -135,19 +145,19 @@
               <input
                 id="drawingUpload"
                 type="file"
-                name="drawings"
+                name="drawing_files"
                 multiple
                 accept=".step,.stp,.dxf,.dwg,.pdf,.stl,.iges,.igs,.zip"
               />
               <span class="upload-icon">+</span>
               <strong>Upload drawing files</strong>
-              <small>STEP, STP, DXF, DWG, PDF, STL, 3MF, IGES or ZIP. Multiple files accepted.</small>
+              <small>STEP, STP, DXF, DWG, PDF, STL, 3MF, IGES or ZIP. Keep attachments under 10 MB per submission.</small>
               <em id="fileList">No files selected yet.</em>
             </label>
 
             <div class="form-actions">
-              <button class="button primary" type="submit">Create account & request quote</button>
-              <p>By submitting, you create an email-based quote account for this job.</p>
+              <button class="button primary" type="submit">Send quote request</button>
+              <p>Your details and drawing files will be sent to our quote inbox.</p>
             </div>
           </form>
 
@@ -220,19 +230,20 @@
           <p class="eyebrow">Secure payment</p>
           <h2>Approve the quote, then pay by credit card.</h2>
           <p>
-            Credit card payment is available after quote approval. We will send a secure payment link with your official quote.
+            Credit card payment is available after quote approval. We will send a secure payment link with your official
+            quote.
           </p>
         </div>
         <a class="button payment-button" href="#quote">
-  Request a quote first
-</a>
+          Request a quote first
+        </a>
       </section>
     </main>
 
     <footer class="site-footer">
       <strong>RapidCut AM</strong>
       <span>CNC machining and metal 3D printing quotes for customers across Australia.</span>
-      <a href="mailto:quotes@example.com">cncmetal3dprinting@gmail.com</a>
+      <a href="mailto:cncmetal3dprinting@gmail.com">cncmetal3dprinting@gmail.com</a>
     </footer>
 
     <script src="./script.js"></script>

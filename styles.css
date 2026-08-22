@@ -300,6 +300,10 @@ textarea {
   padding: 12px 13px;
 }
 
+.hidden-field {
+  display: none;
+}
+
 textarea {
   resize: vertical;
 }
